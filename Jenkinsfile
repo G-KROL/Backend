@@ -22,7 +22,7 @@ pipeline {
     stages {
         stage('Get Code') {
             steps {
-                git branch: 'main', url: 'https://github.com/G-KROL/Backend'
+                checkout scm
             }
         }
 
