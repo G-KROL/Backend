@@ -75,7 +75,7 @@ pipeline {
                 script {
                   docker.withRegistry("$dockerRegistry", "$registryCredentials") {
                       applicationImage.push()
-                      applicationImage.push('latest')
+                      applicationImage.push("$dockerTag")
                   }
                 }
             }
