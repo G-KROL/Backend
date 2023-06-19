@@ -70,7 +70,7 @@ pipeline {
                 } 
             }
         }
-      /*   stage('Push image to Artifactory') {
+        stage('Push image to Artifactory') {
             steps {
                 script {
                   docker.withRegistry("$dockerRegistry", "$registryCredentials") {
@@ -79,6 +79,6 @@ pipeline {
                   }
                 }
             }
-        } */
+        }
     }
 }
